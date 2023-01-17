@@ -14,5 +14,5 @@ use App\Http\Controllers\ArticleGeneratorController;
 |
 */
 
-Route::get('/', [ArticleGeneratorController::class,'index']);
-Route::post('/generate-article',[ArticleGeneratorController::class,'generate']);
+Route::get('/', [ArticleGeneratorController::class,'index'])->name('index');
+Route::post('/generate-article',[ArticleGeneratorController::class,'generate'])->name('generate');
